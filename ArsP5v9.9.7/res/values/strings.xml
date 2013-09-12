@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ars</string>
+    <string name="app_description">Ars - Aplicación Móvil</string>
+    <string name="nada">nada</string>
+    <string name="strCargarDatos">Comenzar</string>
+    <string name="strDescargarContenido">Descargar Contenido</string>
+    <string name="strResultados">Resultados</string>
+    <string name="strContinuar">Continuar</string>
+    <string name="strRecomendacion">Obtener Recomendación</string>
+    <string name="strDestacados">Destacados</string>
+    <string name="strRandom">Aleatorio</string>
+    <string name="strResRandom">Resultado Aleatorio</string>
+    <string name="strResDestacados">Resultados Destacados</string>
+    <string name="strExpName">"Nombre: "</string>
+    <string name="strDescExpo">"Descripción: "</string>
+    <string name="strRank">"Calificación: "</string>
+    <string name="strFechaInicio">"Fecha de Inicio: "</string>
+    <string name="strFechaFin">"Fecha de Fin: "</string>
+    <string name="strMuseo">"Museo: "</string>
+    <string name="strMandar">Enviar</string>
+    <string name="strBlank"></string>                     
+</resources>

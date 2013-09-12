@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="botones" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>       
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">@drawable/btn_cust</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+       <item name="android:layout_marginTop">10dp</item>
+       <item name="android:layout_marginBottom">10dp</item>
+       <item name="android:layout_centerInParent">true</item>
+    </style>
+</resources>

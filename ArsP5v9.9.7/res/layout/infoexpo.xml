@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/space"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/lbName"
+        style="@style/arstextview"
+        android:text="@string/strExpName"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/lbNameValue"
+        style="@style/arstextviewsmall"
+        android:text="@string/nada"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/lbDesc"
+        style="@style/arstextview"
+        android:text="@string/strDescExpo"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/lbDescValue"
+        style="@style/arstextviewsmall"
+        android:layout_weight="0.05"
+        android:text="@string/nada"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/lbFechaInicio"
+        style="@style/arstextview"
+        android:text="@string/strFechaInicio"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/lbFechaInicioValue"
+        style="@style/arstextviewsmall"
+        android:text="@string/nada"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/lbFechaFin"
+        style="@style/arstextview"
+        android:text="@string/strFechaFin"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/lbFechaFinValue"
+        style="@style/arstextviewsmall"
+        android:text="@string/nada"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/lbMuseo"
+        style="@style/arstextview"
+        android:text="@string/strMuseo"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/lbMuseoValue"
+        style="@style/arstextviewsmall"
+        android:text="@string/nada"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</LinearLayout>

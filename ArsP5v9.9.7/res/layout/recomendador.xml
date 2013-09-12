@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerInParent="true"
+    android:background="@drawable/space"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnRecomendacion"
+            style="@style/botones"
+            android:text="@string/strRecomendacion" />
+
+        <Button
+            android:id="@+id/btnDestacados"
+            style="@style/botones"
+            android:text="@string/strDestacados" />
+
+        <Button
+            android:id="@+id/btnRandom"
+            style="@style/botones"
+            android:text="@string/strRandom" />
+    </LinearLayout>
+
+</RelativeLayout>
