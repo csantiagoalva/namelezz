@@ -1,0 +1,244 @@
+@import "forms.css";
+
+body {
+	text-align: center;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	/* background-image: url("images/fondo.png"); */
+	background-image: url("images/fondo2.png");
+	background-repeat: repeat;
+	font-family: Helvetica;
+}
+
+h2,h3,h4,h5,h6 {
+	color: #black;
+}
+
+a {
+	color: #05a
+}
+
+h1 {
+	color: #white;
+}
+
+#pageHeader {
+	margin: 0px;
+	padding: 0px;
+	font-weight: bold;
+	font-size: 11px;
+	background-color: white;
+	background-image: url("images/banner/header_bg.png");
+	background-repeat: repeat-x;
+	min-height: 100px;
+	max-height: 100px;
+	min-width: 1024px;
+}
+
+#pageHeader * {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	min-height: 100px;
+	max-height: 100px;
+}
+
+.banner {
+	background-position: center;
+	text-align: center;
+	background-image: url("images/banner/ars.png");
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	min-width: 1024px;
+	min-height: 100px;
+	background-repeat: no-repeat;
+}
+
+#pageMain {
+	height: 450px;
+	min-height: 400px;
+	min-width: 1014px;
+	width: 100%;
+}
+
+pageHMenu {
+	width: 100%;
+	min-height: 600px;
+	height: 200px;
+	min-width: 1014px;
+}
+
+#pageMenu {
+	-moz-border-radius: 15px;
+	font-variant: small-caps;
+	top: 100px;
+	vertical-align: top;
+	text-align: left;
+	background: url("images/ui-bg_diagonals-thick_15_0b3e6f_40x40.png")
+		repeat scroll 50% 50% #0B3E6F;
+	color: #def;
+	padding: 0px;
+	border-color: #8ad;
+	font-size: small;
+	min-width: 210px;
+	top: 20px;
+	height: 38px;
+}
+
+#pageMenu h3 {
+	background-color: #0B3E6F;
+	background-image: url("images/title-bg.png");
+	background-repeat: repeat-x;
+	color: white;
+	max-width: 300px;
+	padding: 5px;
+	position: relative;
+	text-align: center;
+	top: -12px;
+}
+
+#pageMenu h4 {
+	background-color: #48F;
+	background-image: url("images/title-bg.png");
+	background-repeat: repeat-x;
+	padding: 2px;
+	margin-bottom: 5px;
+	color: white
+}
+
+#pageMenu ul {
+	text-indent: 0px;
+}
+
+#pageMenu a {
+	padding: 0px;
+	line-height: 150%;
+	text-decoration: none;
+	color: white;
+}
+
+#pageMenu h3:hover {
+	color: white;
+	text-decoration: none;
+	background-color: #333333;
+	background-image: url("images/title-bg.png");
+	background-repeat: repeat-x;
+}
+
+#pageHMenu {
+	font-variant: small-caps;
+	vertical-align: top;
+	text-align: left;
+	background-color: #def;
+	font-size: small;
+}
+
+#pageContent {
+	background-color: white;
+	padding: 0px;
+	text-align: center;
+	width: 100%;
+	min-width: 1024px;
+	background-image: url("images/rule.png");
+	background-position: bottom left;
+	background-repeat: repeat-x;
+	min-height: 200px;
+	top: 200px;
+}
+
+#pageSession {
+	display: table-cell;
+	padding: 5px;
+	border: 1px solid;
+	border-color: #AAA #888 #888 #AAA;
+	font-size: small;
+	font-variant: normal;
+	text-align: left;
+	vertical-align: top;
+	margin: 5px;
+	color: #079;
+}
+
+#pageSession .nombre:before {
+	content: url("images/icons/menu/user.png")
+}
+
+#pageFooter {
+	background-color: #ffffff;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 10px;
+	padding: 5px;
+	padding-top: 33px;
+	min-width: 1014px;
+	color: #468;
+	min-height: 110px;
+	background-position: center right;
+	background-repeat: no-repeat;
+	position: inherit;
+}
+
+#pageFooter img {
+	border: 0px;
+}
+
+.gantt {
+	border-collapse: collapse
+}
+
+.gantt td {
+	border: 1px solid #26D;
+	background-color: white;
+	color: black;
+	text-align: left;
+	padding: 2px
+}
+
+.gantt .header td {
+	border: 1px solid white;
+	background-color: #26D;
+	color: white
+}
+
+.gantt .par * {
+	background-color: #EEF;
+}
+
+.gantt .calendar {
+	border-width: 0px 1px 0px 1px
+}
+
+.button {
+	border: 1px solid;
+	border-color: #8cF #26D #26D #8CF;
+	padding: 2px;
+	background-color: white;
+}
+
+.track {
+	text-align: left;
+	padding: 10px;
+	font-family: monospace;
+	color: #48C
+}
+
+form {
+	text-align: left;
+	padding: 5px;
+}
+
+form label,form select,form input {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+form label {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.dataTables_wrapper {
+	min-height: 200px;
+}

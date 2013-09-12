@@ -1,0 +1,77 @@
+form {
+	display: inline-block;
+	padding: 5px;
+	margin: 5px;
+	border: 1px solid;
+	border-color: #ADA #574 #574 #ADA;
+	background: white;
+}
+
+form table * {
+	text-align: left
+}
+
+form .cambio {
+	background: gray;
+}
+
+form .title {
+	background-color: #5C5C5C;
+	background-image: url("../images/title-bg.png");
+	background-repeat: repeat-x;
+	padding: 2px;
+	margin-bottom: 5px;
+	color: white
+}
+
+form .section {
+	background: #aD8;
+	background-image: url("../images/title-bg.png");
+	background-repeat: repeat-x;
+	padding: 2px;
+	margin-bottom: 5px;
+	text-align: left;
+	border-top: 1px solid #280;
+	border-left: 1px solid #280;
+	margin-top: 10px;
+	margin-bottom: 10px
+}
+
+form table.list {
+	border: 1px solid #260;
+}
+
+form table.list th {
+	background-color: #aD8;
+}
+
+form table.list td {
+	border-bottom: 1px solid #aD8;
+}
+
+form table.list tr.par {
+	background-color: #DFC;
+}
+
+form table.list tr.final {
+	color: #aD8;
+}
+
+form .helper {
+	font-size: small;
+	color: #480;
+	padding: 5px
+}
+
+form .output {
+	color: gray;
+	font-style: italic;
+	font-size: small;
+	padding: 3px
+}
+
+form .info {
+	color: #BD9;
+	font-size: small;
+	font-style: italic;
+}

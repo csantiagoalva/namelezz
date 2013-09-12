@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<!-- Overwrite Convention -->
+	<constant name="struts.objectFactory" value="spring" />
+	<constant name="struts.convention.package.locators" value="controller" />
+	<constant name="struts.convention.action.suffix" value="Controller" />
+	<constant name="struts.convention.action.mapAllMatches" value="true" />
+	<constant name="struts.convention.default.parent.package"
+		value="tt-ARS" />
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.custom.i18n.resources" value="global" />
+	<constant name="struts.ognl.allowStaticMethodAccess" value="true" />
+	<constant name="struts.mapper.idParameterName" value="idSel" />
+	<constant name="struts.convention.result.path" value="/contenido" />
+	<constant name="struts.multipart.maxSize" value="20000000" />
+	<constant name="struts.action.excludePattern" value="/rest" />
+	<constant name="struts.action.excludePattern" value="/downloadResource.action" />
+	<constant name="struts.action.extension" value="action" />
+
+
+	<package name="tt-ARS" extends="rest-default,json-default">
+
+		<interceptors>
+			<!--configuro el interceptor -->
+			<interceptor name="autenticarInterceptor"
+				class="mx.ipn.escom.ars.interceptor.AutenticarInterceptor" />
+			<interceptor-stack name="ARSStack">
+				<interceptor-ref name="autenticarInterceptor" />
+				<interceptor-ref name="exception" />
+				<interceptor-ref name="alias" />
+				<interceptor-ref name="servletConfig" />
+				<interceptor-ref name="messages">
+					<param name="operationMode">AUTOMATIC</param>
+				</interceptor-ref>
+				<interceptor-ref name="prepare" />
+				<interceptor-ref name="i18n" />
+				<interceptor-ref name="chain" />
+				<interceptor-ref name="debugging" />
+				<interceptor-ref name="profiling" />
+				<interceptor-ref name="actionMappingParams" />
+				<interceptor-ref name="scopedModelDriven" />
+				<interceptor-ref name="modelDriven">
+					<param name="refreshModelBeforeResult">true</param>
+				</interceptor-ref>
+				<interceptor-ref name="fileUpload" />
+				<interceptor-ref name="checkbox" />
+				<interceptor-ref name="staticParams" />
+				<interceptor-ref name="params">
+					<!-- <param name="excludeParams">dojo\..*</param> -->
+					<param name="excludeParams">dojo\..*,^struts\..*</param>
+				</interceptor-ref>
+				<interceptor-ref name="rest" />
+				<interceptor-ref name="conversionError" />
+				<interceptor-ref name="validation">
+					<param name="excludeMethods">input,back,cancel,browse,index,show,edit,editNew</param>
+					<param name="validateAnnotatedMethodOnly">true</param>
+				</interceptor-ref>
+				<interceptor-ref name="jsonValidation" />
+				<interceptor-ref name="restWorkflow">
+					<param name="excludeMethods">input,back,cancel,browse,index,show,edit,editNew</param>
+				</interceptor-ref>
+
+
+
+			</interceptor-stack>
+		</interceptors>
+
+		<default-interceptor-ref name="ARSStack" />
+		<global-results>
+			<result name="login">/login.jsp</result>
+			<result name="next" type="redirectAction">catalogo-museo.action</result>
+		</global-results>
+
+
+		<action name="showLogin">
+			<result>/login.jsp</result>
+		</action>
+
+	</package>
+
+	<package name="download" namespace="/" extends="struts-default">
+
+		<action name="download" class="mx.ipn.escom.ars.util.DownloadAction">
+			<result name="success" type="stream">
+				<param name="contentType">application/octet-stream</param>
+				<param name="inputName">fileInputStream</param>
+				<param name="contentDisposition">filename="${fileName}"</param>
+				<param name="bufferSize">1024</param>
+			</result>
+			<result name="error" type="redirectAction">catalogo-museo.action</result>
+
+		</action>
+	</package>
+
+	<package name="downloadResource" namespace="/" extends="struts-default">
+		<action name="downloadResource" class="mx.ipn.escom.ars.util.DownloadResource">
+			<result name="success" type="stream">
+				<param name="contentType">application/octet-stream</param>
+				<param name="inputName">fileInputStream</param>
+				<param name="contentDisposition">filename="${fileName}"</param>
+				<param name="contentLength">${contentLength}</param>
+				<param name="bufferSize">1024</param>
+			</result>
+		</action>
+	</package>
+
+
+</struts>

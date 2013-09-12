@@ -1,0 +1,16 @@
+body {
+	width: 100%;
+	background-image: none;
+}
+
+#pageHeader {
+	background-image: none;
+}
+
+.banner {
+	background-image: url("../images/logos/sep.png");
+}
+
+#pageFooter {
+	background-image: url("..images/logos/escudo_sep.png");
+}
