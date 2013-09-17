@@ -212,7 +212,7 @@ public class MainActivity extends Activity {
 			IOException {
 		HttpClient httpClient = new DefaultHttpClient();
 		HttpPost post = new HttpPost(
-				"http://192.168.226.197:8081/myl/rest/msgPost");
+				"http://192.168.226.197:8081/proteccioncivil/rest/criterioPost");
 		post.setHeader("content-type", "application/json");
 
 		JSONArray dato = new JSONArray();
